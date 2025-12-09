@@ -12,6 +12,7 @@
 		"verbatimModuleSyntax": true,
 		"moduleDetection": "force",
 		"noEmit": true,
+		"jsx": "react-jsx",
 
 		/* Linting */
 		"strict": true,
@@ -21,11 +22,5 @@
 		"noFallthroughCasesInSwitch": true,
 		"noUncheckedSideEffectImports": true
 	},
-	"include": [
-		"src",
-		"src/types/shims-vue.d.ts",
-		"server",
-		"server/global.d.ts",
-		"scripts/**/*.ts"
-	]
+	"include": ["src", "server", "server/global.d.ts", "scripts/**/*.ts"]
 }

@@ -1,6 +1,6 @@
-# GAS Vue TypeScript Project
+# GAS React TypeScript Project
 
-A Google Apps Script (GAS) project with a Vue.js frontend, built with TypeScript and modern tooling.
+A Google Apps Script (GAS) project with a React.js frontend, built with TypeScript and modern tooling.
 
 ## How to Start Development
 
@@ -15,7 +15,7 @@ A Google Apps Script (GAS) project with a Vue.js frontend, built with TypeScript
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd gas-vue-ts
+   cd gas-react-ts
    ```
 
 2. **Install dependencies**
@@ -47,7 +47,7 @@ pnpm run dev:watch
 #### Option 2: Separate Builds
 Build client and server separately:
 ```bash
-# Build client (Vue app)
+# Build client (React app)
 pnpm run build:client
 
 # Build server (GAS functions)
@@ -76,7 +76,7 @@ pnpm run push
 ```
 
 ### Development Server (Local Preview)
-For local development of the Vue frontend (without GAS):
+For local development of the React frontend (without GAS):
 ```bash
 pnpm run dev
 ```
@@ -86,13 +86,11 @@ This starts a Vite dev server at `http://localhost:5173` for local testing.
 ## Libraries
 
 ### Core Dependencies
-- **Vue 2.7.16** - Progressive JavaScript framework for building user interfaces
-- **Vuetify 2.7.2** - Material Design component framework for Vue.js
+- **React v19** - Progressive JavaScript framework for building user interfaces
 
 ### Build Tools
 - **TypeScript ~5.9.3** - Typed superset of JavaScript
 - **Vite ^7.2.4** - Next-generation frontend build tool
-  - `@vitejs/plugin-vue2` - Vue 2 support for Vite
   - `vite-plugin-singlefile` - Bundles the entire app into a single HTML file (required for GAS)
 - **Rolldown 1.0.0-beta.52** - Fast Rust-based bundler for server-side code
   - `rolldown-plugin-remove-export` - Removes export statements from server code
@@ -115,9 +113,8 @@ This starts a Vite dev server at `http://localhost:5173` for local testing.
 
 The project follows a clear separation between client and server code:
 
-- **Client (`src/`)**: Vue.js application that runs in the browser
+- **Client (`src/`)**: React.js application that runs in the browser
   - Built with Vite and bundled into a single HTML file
-  - Uses Vuetify for UI components
   - Communicates with GAS server functions via `google.script.run`
 
 - **Server (`server/`)**: Google Apps Script functions
@@ -128,7 +125,7 @@ The project follows a clear separation between client and server code:
 ### Build Architecture
 
 1. **Client Build Process**:
-   - Vite bundles Vue components and assets
+   - Vite bundles React components and assets
    - `vite-plugin-singlefile` creates a single HTML file containing all JavaScript and CSS
    - Output: `dist/src/index.html` (single file that GAS can serve)
 
@@ -156,13 +153,13 @@ Rolldown provides fast bundling with ESM support, which is ideal for the server-
 
 ```
 gas-test/
-├── src/                    # Client-side Vue application
-│   ├── components/         # Vue components
+├── src/                    # Client-side React application
+│   ├── components/         # React components
 │   ├── pages/             # Page components
-│   ├── plugins/           # Vue plugins (Vuetify)
+│   ├── plugins/           # React plugins
 │   ├── services/          # Client-side services
 │   ├── utils/             # Utility functions
-│   └── main.ts            # Vue app entry point
+│   └── main.ts            # React app entry point
 ├── server/                # Server-side GAS functions
 │   ├── main.ts            # Server entry point (exports GAS functions)
 │   ├── modules/           # Server modules
@@ -181,15 +178,14 @@ gas-test/
 ## TODOs
 
 ### In Progress / Planned
-- [x] Investigate feasibility of fetching data in client-side using GAS
-  - It's impossible because of CORS.
 - [ ] Setup Husky, Lint-staged
 - [ ] Set running script when cloning repo
   - [ ] copy appscript.json once
   - [ ] init husky
+- [ ] Setup data fetching library such as Tanstack Query
 - [ ] Create types dir to store interfaces between client and server
 - [ ] Setup vitest
-- [ ] Setup Validation library such as VeeValidate
+- [ ] Setup Validation library such as zod
 - [ ] Investigate [openapi code generator](https://github.com/mahaker/openapi-generator-gas)
 - [ ] Setup [gasnuki](https://github.com/luthpg/gasnuki) for type safe interface
 - [ ] Prod build error handling using [vite-plugin](https://github.com/luthpg/vite-plugin-google-apps-script) if needed
