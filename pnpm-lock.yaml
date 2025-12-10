@@ -8,12 +8,12 @@ importers:
 
   .:
     dependencies:
-      '@moneyforward/ca-mid-web-components':
-        specifier: 0.0.14
-        version: 0.0.14(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.3)
       '@moneyforward/mfui-components':
         specifier: 2.4.1
         version: 2.4.1(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+      '@moneyforward/mfui-icons-react':
+        specifier: 2.3.0
+        version: 2.3.0(react@19.2.1)
       '@tailwindcss/vite':
         specifier: 4.1.17
         version: 4.1.17(vite@7.2.4(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(sass@1.94.2)(tsx@4.21.0))
@@ -833,13 +833,6 @@ packages:
     peerDependenciesMeta:
       '@cfworker/json-schema':
         optional: true
-
-  '@moneyforward/ca-mid-web-components@0.0.14':
-    resolution: {integrity: sha512-AtO9nzTR7fkzf8eaguBIWtavBP4v/mtvjIytdB9DT8ph2UBcX/uCrmo2DY532OK37Eh21CUq7G3c3gM40HzpaA==, tarball: https://npm.pkg.github.com/download/@moneyforward/ca-mid-web-components/0.0.14/f679d1f8bc285bfc1d2f234f872b215f2006e9aa}
-    peerDependencies:
-      react: '>=17'
-      react-dom: '>=17'
-      typescript: '>=4'
 
   '@moneyforward/mfui-components@2.4.1':
     resolution: {integrity: sha512-QJ33fhC7Z9x+kgzJ9ec3lYxd6AozyA0jZUU0cbgZ0pSdEkxIJwUQ+Q4BAt1DY7FLHDjjJVAjnbgFtMKJLnXUjA==, tarball: https://npm.pkg.github.com/download/@moneyforward/mfui-components/2.4.1/7d4ce376b59ed53009aaf657e5ad86f7781655f9}
@@ -3912,12 +3905,6 @@ snapshots:
       zod-to-json-schema: 3.25.0(zod@3.25.76)
     transitivePeerDependencies:
       - supports-color
-
-  '@moneyforward/ca-mid-web-components@0.0.14(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.3)':
-    dependencies:
-      react: 19.2.1
-      react-dom: 19.2.1(react@19.2.1)
-      typescript: 5.9.3
 
   '@moneyforward/mfui-components@2.4.1(react-dom@19.2.1(react@19.2.1))(react@19.2.1)':
     dependencies:

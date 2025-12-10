@@ -42,7 +42,7 @@
 		"vite-plugin-singlefile": "^2.3.0"
 	},
 	"dependencies": {
-		"@moneyforward/ca-mid-web-components": "0.0.14",
+		"@moneyforward/mfui-icons-react": "2.3.0",
 		"@moneyforward/mfui-components": "2.4.1",
 		"@tailwindcss/vite": "4.1.17",
 		"@tanstack/react-query": "5.90.12",
