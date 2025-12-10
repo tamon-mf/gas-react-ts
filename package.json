@@ -45,6 +45,7 @@
 		"@moneyforward/ca-mid-web-components": "0.0.14",
 		"@moneyforward/mfui-components": "2.4.1",
 		"@tailwindcss/vite": "4.1.17",
+		"@tanstack/react-query": "5.90.12",
 		"react": "^19.2.1",
 		"react-dom": "^19.2.1",
 		"tailwindcss": "4.1.17"
