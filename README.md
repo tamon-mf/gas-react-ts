@@ -6,7 +6,7 @@ A Google Apps Script (GAS) project with a React.js frontend, built with TypeScri
 
 ### Prerequisites
 
-- Node.js (v20 or higher recommended)
+- Node.js (v24 or higher recommended)
 - pnpm (package manager)
 - A Google Apps Script project (create one at [script.google.com](https://script.google.com))
 
@@ -153,8 +153,9 @@ Rolldown provides fast bundling with ESM support, which is ideal for the server-
 
 ```
 gas-test/
-├── src/                    # Client-side React application
-│   ├── components/         # React components
+├── src/                   # Client-side React application
+│   ├── components/        # React components
+│   ├── hooks/             # Custom Hooks   
 │   ├── pages/             # Page components
 │   ├── plugins/           # React plugins
 │   ├── services/          # Client-side services
@@ -182,7 +183,6 @@ gas-test/
 - [ ] Set running script when cloning repo
   - [ ] copy appscript.json once
   - [ ] init husky
-- [ ] Setup data fetching library such as Tanstack Query
 - [ ] Create types dir to store interfaces between client and server
 - [ ] Setup vitest
 - [ ] Setup Validation library such as zod
