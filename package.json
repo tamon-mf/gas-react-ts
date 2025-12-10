@@ -1,5 +1,5 @@
 {
-	"name": "gas-vue-ts",
+	"name": "gas-react-ts",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
@@ -24,7 +24,9 @@
 		"@rollup/plugin-alias": "^6.0.0",
 		"@types/google-apps-script": "^2.0.8",
 		"@types/node": "^24.10.1",
-		"@vitejs/plugin-vue2": "^2.3.4",
+		"@types/react": "^19.2.7",
+		"@types/react-dom": "^19.2.3",
+		"@vitejs/plugin-react": "^5.1.2",
 		"chokidar-cli": "^3.0.0",
 		"concurrently": "^9.2.1",
 		"deepmerge": "^4.3.1",
@@ -37,14 +39,18 @@
 		"typescript": "~5.9.3",
 		"vite": "^7.2.4",
 		"vite-plugin-dts": "^4.5.4",
-		"vite-plugin-singlefile": "^2.3.0",
-		"vue-template-compiler": "2.6.14"
+		"vite-plugin-singlefile": "^2.3.0"
 	},
 	"dependencies": {
-		"vue": "2.7.16",
-		"vuetify": "2.7.2"
+		"@moneyforward/ca-mid-web-components": "0.0.14",
+		"@moneyforward/mfui-components": "2.4.1",
+		"@tailwindcss/vite": "4.1.17",
+		"@tanstack/react-query": "5.90.12",
+		"react": "^19.2.1",
+		"react-dom": "^19.2.1",
+		"tailwindcss": "4.1.17"
 	},
 	"engines": {
-		"node": ">=20.0.0"
+		"node": ">=24.11.1"
 	}
 }
