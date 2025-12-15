@@ -183,6 +183,7 @@ gas-test/
 - [ ] Set running script when cloning repo
   - [ ] copy appscript.json once
   - [ ] init husky
+- [ ] Setup routing using state management library or context API
 - [ ] Create types dir to store interfaces between client and server
 - [ ] Setup vitest
 - [ ] Setup Validation library such as zod
