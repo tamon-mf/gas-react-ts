@@ -26,7 +26,7 @@ interface PageManagerProviderProps {
 
 export function PageManagerProvider({
 	children,
-	initialPage = "home",
+	initialPage = "top",
 }: PageManagerProviderProps) {
 	const [currentPage, setCurrentPage] = useState<PageId>(initialPage);
 	const [history, setHistory] = useState<PageId[]>([initialPage]);

@@ -2,7 +2,7 @@ import { Button, Typography } from "@moneyforward/mfui-components";
 import { DrilldownForward } from "@moneyforward/mfui-icons-react";
 import { usePageManager } from "../hooks/usePageManager";
 
-export function HomePage() {
+export function TopPage() {
 	const { navigate } = usePageManager();
 
 	return (
@@ -30,7 +30,7 @@ export function HomePage() {
 					<Button
 						priority="primary"
 						size="medium"
-						onClick={() => navigate("trial-balance-reports")}
+						onClick={() => navigate("master-integration")}
 						className="w-fit"
 						rightIcon={<DrilldownForward />}
 					>

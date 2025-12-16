@@ -1,32 +1,34 @@
 import type { PageConfig } from "../types/pages";
-import { HomePage } from "./HomePage";
+import { MasterIntegrationPage } from "./MasterIntegrationPage";
+import { TopPage } from "./TopPage";
 import { TradePartnerReportsPage } from "./TradePartnerReportsPage";
 import { TransitionMonthlyReportsPage } from "./TransitionMonthlyReportsPage";
 import { TrialBalanceReportsPage } from "./TrialBalanceReportsPage";
 
 export const pageRegistry: PageConfig[] = [
 	{
-		id: "home",
+		id: "top",
 		title: "マネーフォワード クラウド会計Plus",
-		component: HomePage,
-		showInNav: true,
+		component: TopPage,
+	},
+	{
+		id: "master-integration",
+		title: "マスタ連携",
+		component: MasterIntegrationPage,
 	},
 	{
 		id: "trial-balance-reports",
 		title: "残高試算表",
 		component: TrialBalanceReportsPage,
-		showInNav: true,
 	},
 	{
 		id: "transition-monthly-reports",
 		title: "推移表",
 		component: TransitionMonthlyReportsPage,
-		showInNav: true,
 	},
 	{
 		id: "trade-partner-reports",
 		title: "取引先別推移表",
 		component: TradePartnerReportsPage,
-		showInNav: true,
 	},
 ];
