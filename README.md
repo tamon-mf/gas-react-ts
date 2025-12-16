@@ -44,8 +44,16 @@ This will watch for changes, rebuild both client and server, and automatically p
 pnpm run dev:watch
 ```
 
-#### Option 2: Separate Builds
-Build client and server separately:
+#### Option2: Development Server (Local Preview)
+For local development of the React frontend (without GAS):
+```bash
+pnpm run dev
+```
+This starts a Vite dev server at `http://localhost:5173` for local testing.
+
+
+### Build Workflow
+
 ```bash
 # Build client (React app)
 pnpm run build:client
@@ -57,7 +65,7 @@ pnpm run build:server
 pnpm run build
 ```
 
-#### Option 3: Watch Individual Components
+### Build and Watch Individual Components
 ```bash
 # Watch client only
 pnpm run build:client:watch
@@ -69,19 +77,11 @@ pnpm run build:server:watch
 pnpm run build:watch
 ```
 
-#### Manual Deployment
+### Deployment
 After building, manually push to GAS:
 ```bash
 pnpm run push
 ```
-
-### Development Server (Local Preview)
-For local development of the React frontend (without GAS):
-```bash
-pnpm run dev
-```
-
-This starts a Vite dev server at `http://localhost:5173` for local testing.
 
 ## Libraries
 

@@ -7,6 +7,11 @@ import { viteSingleFile } from "vite-plugin-singlefile";
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [react(), viteSingleFile(), tailwindcss()],
+	server: {
+		// Use `src/index.html` as the default entry point when running `vite` (dev server).
+		// This keeps the build output for GAS (`dist/src/index.html`) unchanged.
+		open: "/src/index.html",
+	},
 	resolve: {
 		alias: [
 			{
