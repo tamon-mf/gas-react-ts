@@ -7,7 +7,7 @@ import { TrialBalanceReportsPage } from "./TrialBalanceReportsPage";
 export const pageRegistry: PageConfig[] = [
 	{
 		id: "home",
-		title: "Home",
+		title: "マネーフォワード クラウド会計Plus",
 		component: HomePage,
 		showInNav: true,
 	},

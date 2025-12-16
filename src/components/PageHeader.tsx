@@ -1,4 +1,4 @@
-import { DropdownMenu, IconButton } from "@moneyforward/mfui-components";
+import { DropdownMenu, IconButton, Typography } from "@moneyforward/mfui-components";
 import {
 	DrilldownBackward,
 	MoreVertical,
@@ -16,17 +16,19 @@ export function PageHeader({ title }: PageHeaderProps) {
 
 	return (
 		<header className="bg-[#2E72D8] w-full">
-			<div className="flex justify-between items-center gap-2 p-4">
-				<div className="flex items-center justify-start gap-2">
+			<div className="flex justify-between items-center gap-2 px-4 py-5">
+				<div className="flex items-center justify-start gap-2 min-w-0">
 					{canGoBack ? (
 						<IconButton onClick={goBack} color="transparent">
 							<DrilldownBackward color="white" />
 						</IconButton>
 					) : (
-						<div className="w-[78px]" aria-hidden="true" />
+						null
 					)}
 
-					<p className="font-bold flex-1 text-white text-lg">{title}</p>
+					<Typography variant="contentHeading" className="text-white truncate">
+						{title}
+					</Typography>
 				</div>
 
 				<DropdownMenu icon={<MoreVertical color="white" />} label="Menu">
