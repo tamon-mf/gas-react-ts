@@ -87,6 +87,21 @@ This starts a Vite dev server at `http://localhost:5173` for local testing.
 
 ### Core Dependencies
 - **React v19** - Progressive JavaScript framework for building user interfaces
+- **@tanstack/react-query (TanStack Query)** - Server-state management (fetching/caching/sync)
+- **tailwindcss (Tailwind CSS v4)** - Utility-first styling
+
+### Styling
+
+This project uses **Tailwind CSS v4** via the Vite plugin:
+
+- `vite.config.js` includes `@tailwindcss/vite`
+- `src/index.css` enables Tailwind with `@import "tailwindcss";`
+
+Note: `src/index.css` also imports MFUI styles (`@moneyforward/mfui-components/styles.css`).
+
+### Data Fetching
+
+TanStack Query is set up at the app root in `src/main.tsx` with `QueryClientProvider`.
 
 ### Build Tools
 - **TypeScript ~5.9.3** - Typed superset of JavaScript

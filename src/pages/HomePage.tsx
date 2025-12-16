@@ -6,18 +6,20 @@ export function HomePage() {
 
 	return (
 		<div className="flex flex-col gap-4 p-4">
-			<h1 className="text-2xl font-bold">Home</h1>
+			帳票連携
 			<div className="flex flex-col gap-2">
 				<Button
 					priority="primary"
-					size="large"
+					size="medium"
 					onClick={() => navigate("trial-balance-reports")}
+					className="w-fit"
 				>
 					残高試算表
 				</Button>
 				<Button
 					priority="primary"
-					size="large"
+					size="medium"
+					className="w-fit"
 					onClick={() => navigate("transition-monthly-reports")}
 				>
 					推移表
@@ -25,7 +27,8 @@ export function HomePage() {
 
 				<Button
 					priority="primary"
-					size="large"
+					size="medium"
+					className="w-fit"
 					onClick={() => navigate("trade-partner-reports")}
 				>
 					取引先別推移表
